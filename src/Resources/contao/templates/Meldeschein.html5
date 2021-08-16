@@ -1,0 +1,103 @@
+<style>
+
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+  font-size: 70rem;
+}
+span {
+  color: maroon;
+  margin-left: 40px;
+  font-size: 20rem;
+}
+</style>
+
+
+
+<h1>Meldeschein</h1>
+<div>
+	<div>
+		<div>
+			<span>An- und Abreise</span>
+		</div>
+		<div>
+			<span><?php echo($this->dayArrival);?></span>
+		</div>
+		<div><span><?php echo($this->dayOfDeparture);?></span></div>
+	</div>
+	<div>
+		<div>
+			<span>Angaben des Hauptreisenden</span>
+		</div>
+		<div>
+			<span><?php echo($this->lastname);?></span>
+		</div>
+		<div>
+			<span><?php echo($this->firstname);?></span>
+		</div>
+		<div>
+			<span><?php echo($this->streetNr);?></span>
+		</div>
+		<div>
+			<span><?php echo($this->postal);?></span>
+		</div>
+		<div>
+			<span><?php echo($this->city);?></span>
+		</div>
+		<div>
+			<span><?php echo($this->country);?></span>
+		</div>
+		<div>
+			<span><?php echo($this->birthday);?></span>
+		</div>
+		<div>
+			<span><?php echo($this->nationality);?></span>
+		</div>
+	</div>
+	<div>
+		<div>
+			<span>Angaben zur Begleitperson</span>
+		</div>
+		<div>
+			<span><?php echo($this->lastname2);?></span>
+		</div>
+		<div>
+			<span><?php echo($this->firstname2);?></span>
+		</div>
+		<div>
+			<span><?php echo($this->streetNr2);?></span>
+		</div>
+		<div>
+			<span><?php echo($this->postal2);?></span>
+		</div>
+		<div>
+			<span><?php echo($this->city2);?></span>
+		</div>
+		<div>
+			<span><?php echo($this->country2);?></span>
+		</div>
+		<div>
+			<span><?php echo($this->birthday2);?></span>
+		</div>
+		<div>
+			<span><?php echo($this->nationality2);?></span>
+		</div>
+	</div>
+	<div>
+		<div>
+			<span>Begleitende Kinder</span>
+		</div>
+		<div>
+			<span><?php echo($this->childrenInCompany);?></span>
+		</div>
+	</div>
+</div>
+<?php foreach($this->submittedData as $key=>$data){?>
+<div>
+	<span>
+		<?php echo($key);?>
+	</span>
+	<?php echo($data);?>
+</div>
+<?php } ?>
