@@ -1,12 +1,12 @@
 {
-	"name" : "localbranding-de/branding-bundle",
+	"name" : "localbranding-de/pdfbob-bundle",
 	"version" : "1.0.0",
 	"type" : "contao-bundle",
 	"description" : "Contao/Merconis Extension for an extended Product description",
 	"license" : "LGPL-3.0-or-later",
 	"authors" : [{
 			"name" : "Localbranding-de",
-			"homepage" : "https://github.com/localbranding-de"
+			"homepage" : "https://localbranding.de"
 		}
 	],
 	"require" : {
@@ -29,20 +29,20 @@
 		"symfony/phpunit-bridge" : "^3.2"
 	},
 	"extra" : {
-		"contao-manager-plugin" : "LocalbrandingDe\\BrandingBundle\\ContaoManager\\Plugin"
+		"contao-manager-plugin" : "LocalbrandingDe\\PdfbobBundle\\ContaoManager\\Plugin"
 	},
 	"autoload" : {
 		"psr-4" : {
-			"LocalbrandingDe\\BrandingBundle\\" : "src/"
+			"LocalbrandingDe\\PdfbobBundle\\" : "src/"
 		}
 	},
 	"autoload-dev" : {
 		"psr-4" : {
-			"LocalbrandingDe\\BrandingBundle\\Tests\\" : "tests/"
+			"LocalbrandingDe\\PdfbobBundle\\Tests\\" : "tests/"
 		}
 	},
 	"support" : {
-		"issues" : "https://github.com/localbranding-de/branding-bundle/issues",
-		"source" : "https://github.com/localbranding-de/branding-bundle"
+		"issues" : "https://github.com/localbranding-de/pdfbob-bundle/issues",
+		"source" : "https://github.com/localbranding-de/pdfbob-bundle"
 	}
 }
