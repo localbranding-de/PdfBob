@@ -8,14 +8,14 @@
  * @license LGPL-3.0-or-later
  */
 
-namespace LocalbrandingDe\BrandingBundle\DependencyInjection;
+namespace LocalbrandingDe\PdfbobBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-class BrandingExtension extends Extension
+class PdfbobExtension extends Extension
 {
     /**
      * {@inheritdoc}
