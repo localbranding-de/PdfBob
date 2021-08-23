@@ -24,7 +24,7 @@ class Plugin implements BundlePluginInterface
     public function getBundles(ParserInterface $parser)
     {
         return [
-            BundleConfig::create(BrandingBundle::class)
+            BundleConfig::create(PdfbobBundle::class)
              ->setLoadAfter([ContaoCoreBundle::class),
         ];
     }
