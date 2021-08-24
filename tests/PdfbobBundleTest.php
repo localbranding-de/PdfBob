@@ -17,7 +17,7 @@ class PdfbobBundleTest extends TestCase
 {
     public function testCanBeInstantiated()
     {
-        $bundle = new ExtendedProductDetailBundle();
+        $bundle = new PdfbobBundle();
 
         $this->assertInstanceOf('Localbranding-de\PdfbobBundle\PdfbobBundle', $bundle);
     }
