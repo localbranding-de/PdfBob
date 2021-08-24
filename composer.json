@@ -36,11 +36,6 @@
 			"LocalbrandingDe\\PdfbobBundle\\" : "src/"
 		}
 	},
-	"autoload-dev" : {
-		"psr-4" : {
-			"LocalbrandingDe\\PdfbobBundle\\Tests\\" : "tests/"
-		}
-	},
 	"support" : {
 		"issues" : "https://github.com/localbranding-de/pdfbob-bundle/issues",
 		"source" : "https://github.com/localbranding-de/pdfbob-bundle"
