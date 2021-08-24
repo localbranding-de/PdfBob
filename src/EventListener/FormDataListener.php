@@ -52,15 +52,15 @@ class FormDataListener {
                 $rpdf=$dompdf->output();
                 file_put_contents($path,$rpdf);
                 $objEmail = new \Email();
-                $objEmail->from = "hotel@grandermuehle.de";
+                $objEmail->from = "e@mail.com";
                 $objEmail->subject = "Meldeschein";
                 $objEmail->text = "TOBEREPLACED";
                 
-                $objEmail->fromName = "Meldeschein Grander Mühle";
+                $objEmail->fromName = "Meldeschein";
                 
                 $objEmail->attachFile($path);
                 
-                $objEmail->sendTo("hotel@grandermuehle.de");
+                $objEmail->sendTo("e@mail.com");
                 unlink($path);
             }
     }
