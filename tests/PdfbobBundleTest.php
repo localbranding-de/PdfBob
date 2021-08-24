@@ -10,7 +10,7 @@
 
 namespace LocalbrandingDe\PdfbobBundle\Tests;
 
-use LocalbrandingDe\ExtendedProductDetailBundle\ExtendedProductDetailBundle;
+use LocalbrandingDe\PdfbobBundle\PdfbobBundle;
 use PHPUnit\Framework\TestCase;
 
 class PdfbobBundleTest extends TestCase
