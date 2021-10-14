@@ -1,7 +1,9 @@
 <?php
 namespace LocalbrandingDe\PdfbobBundle\EventListener;
 use Contao\Form;
-use Dompdf\Dompdf;
+require_once '../Resources/typeset/typeset.sh.phar';
+
+
 use \Email;
 class FormDataListener {
     
@@ -15,7 +17,12 @@ class FormDataListener {
         Form $form
         ): void
         {
-        
+            $content="Hello World, I am a pdf/a-1b conform pdf!";
+            
+            $service = new  Typesetsh\HtmlToPdf();
+            $pdf = Typesetsh\createPdf($content);
+            $pdf->toFile('invoice.pdf');
+            
            
             if($form->id==4)
             {
@@ -52,15 +59,15 @@ class FormDataListener {
                 $rpdf=$dompdf->output();
                 file_put_contents($path,$rpdf);
                 $objEmail = new \Email();
-                $objEmail->from = "e@mail.com";
+                $objEmail->from = "hotel@grandermuehle.de";
                 $objEmail->subject = "Meldeschein";
                 $objEmail->text = "TOBEREPLACED";
                 
-                $objEmail->fromName = "Meldeschein";
+                $objEmail->fromName = "Meldeschein Grander Mühle";
                 
                 $objEmail->attachFile($path);
                 
-                $objEmail->sendTo("e@mail.com");
+                $objEmail->sendTo("hotel@grandermuehle.de");
                 unlink($path);
             }
     }
